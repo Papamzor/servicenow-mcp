@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+      "ServicenNow": {
+        "command": "python",
+        "args": [
+          "-m",
+          "servicenow_mcp.cli",
+          "--url",
+          "$SERVICENOW_URL"
+        ],
+        "env": {
+          "SERVICENOW_URL": "$SERVICENOW_URL",
+          "SERVICENOW_USERNAME": "$SERVICENOW_USERNAME",
+          "SERVICENOW_PASSWORD": "$SERVICENOW_PASSWORD"
+        }
+      }
+    }
+  }
